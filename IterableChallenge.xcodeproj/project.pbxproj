@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C85009E7CE00907D8063DC1 /* Pods_IterableChallenge_ServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB15F5CF0E9930F9535D63F /* Pods_IterableChallenge_ServiceExtension.framework */; };
+		435EDD00527E02FA63F11631 /* Pods_IterableChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E45462F3E6660F04E483712 /* Pods_IterableChallenge.framework */; };
+		F9E4ADFA263A438B00544FAB /* IterableChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4ADF9263A438B00544FAB /* IterableChallengeApp.swift */; };
+		F9E4ADFC263A438B00544FAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4ADFB263A438B00544FAB /* ContentView.swift */; };
+		F9E4ADFE263A438E00544FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E4ADFD263A438E00544FAB /* Assets.xcassets */; };
+		F9E4AE01263A438E00544FAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E4AE00263A438E00544FAB /* Preview Assets.xcassets */; };
+		F9E4AE0C263A438E00544FAB /* IterableChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4AE0B263A438E00544FAB /* IterableChallengeTests.swift */; };
+		F9E4AE17263A438E00544FAB /* IterableChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4AE16263A438E00544FAB /* IterableChallengeUITests.swift */; };
+		F9E4AE2E263A51AC00544FAB /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4AE2D263A51AC00544FAB /* NotificationService.swift */; };
+		F9E4AE32263A51AC00544FAB /* IterableChallenge ServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F9E4AE2B263A51AC00544FAB /* IterableChallenge ServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F9E4AE4E263A551D00544FAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4AE4D263A551D00544FAB /* Constants.swift */; };
+		F9E4AE54263AF81300544FAB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4AE53263AF81200544FAB /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9E4AE08263A438E00544FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E4ADEE263A438B00544FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9E4ADF5263A438B00544FAB;
+			remoteInfo = IterableChallenge;
+		};
+		F9E4AE13263A438E00544FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E4ADEE263A438B00544FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9E4ADF5263A438B00544FAB;
+			remoteInfo = IterableChallenge;
+		};
+		F9E4AE30263A51AC00544FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E4ADEE263A438B00544FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9E4AE2A263A51AC00544FAB;
+			remoteInfo = "IterableChallenge ServiceExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9E4AE36263A51AC00544FAB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F9E4AE32263A51AC00544FAB /* IterableChallenge ServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E45462F3E6660F04E483712 /* Pods_IterableChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IterableChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB15F5CF0E9930F9535D63F /* Pods_IterableChallenge_ServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IterableChallenge_ServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		254E2935997B6929C5BBB545 /* Pods-IterableChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableChallenge.release.xcconfig"; path = "Target Support Files/Pods-IterableChallenge/Pods-IterableChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		82400018DB72E5912F52149F /* Pods-IterableChallenge ServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableChallenge ServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-IterableChallenge ServiceExtension/Pods-IterableChallenge ServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		B1D323EDE311DE460ED7AECD /* Pods-IterableChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableChallenge.debug.xcconfig"; path = "Target Support Files/Pods-IterableChallenge/Pods-IterableChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B611F8B1AAC35C4A21075EA1 /* Pods-IterableChallenge ServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableChallenge ServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-IterableChallenge ServiceExtension/Pods-IterableChallenge ServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		F9E4ADF6263A438B00544FAB /* IterableChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IterableChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E4ADF9263A438B00544FAB /* IterableChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IterableChallengeApp.swift; sourceTree = "<group>"; };
+		F9E4ADFB263A438B00544FAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9E4ADFD263A438E00544FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9E4AE00263A438E00544FAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9E4AE02263A438E00544FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E4AE07263A438E00544FAB /* IterableChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IterableChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E4AE0B263A438E00544FAB /* IterableChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IterableChallengeTests.swift; sourceTree = "<group>"; };
+		F9E4AE0D263A438E00544FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E4AE12263A438E00544FAB /* IterableChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IterableChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E4AE16263A438E00544FAB /* IterableChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IterableChallengeUITests.swift; sourceTree = "<group>"; };
+		F9E4AE18263A438E00544FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E4AE2B263A51AC00544FAB /* IterableChallenge ServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IterableChallenge ServiceExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E4AE2D263A51AC00544FAB /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F9E4AE2F263A51AC00544FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E4AE4D263A551D00544FAB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F9E4AE53263AF81200544FAB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9E4ADF3263A438B00544FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435EDD00527E02FA63F11631 /* Pods_IterableChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE04263A438E00544FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE0F263A438E00544FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE28263A51AC00544FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C85009E7CE00907D8063DC1 /* Pods_IterableChallenge_ServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E6246F657B9A8FA02173EE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1D323EDE311DE460ED7AECD /* Pods-IterableChallenge.debug.xcconfig */,
+				254E2935997B6929C5BBB545 /* Pods-IterableChallenge.release.xcconfig */,
+				B611F8B1AAC35C4A21075EA1 /* Pods-IterableChallenge ServiceExtension.debug.xcconfig */,
+				82400018DB72E5912F52149F /* Pods-IterableChallenge ServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC352EE4EE5C4006CCDA2873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E45462F3E6660F04E483712 /* Pods_IterableChallenge.framework */,
+				1FB15F5CF0E9930F9535D63F /* Pods_IterableChallenge_ServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9E4ADED263A438B00544FAB = {
+			isa = PBXGroup;
+			children = (
+				F9E4ADF8263A438B00544FAB /* IterableChallenge */,
+				F9E4AE0A263A438E00544FAB /* IterableChallengeTests */,
+				F9E4AE15263A438E00544FAB /* IterableChallengeUITests */,
+				F9E4AE2C263A51AC00544FAB /* IterableChallenge ServiceExtension */,
+				F9E4ADF7263A438B00544FAB /* Products */,
+				5E6246F657B9A8FA02173EE8 /* Pods */,
+				EC352EE4EE5C4006CCDA2873 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9E4ADF7263A438B00544FAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9E4ADF6263A438B00544FAB /* IterableChallenge.app */,
+				F9E4AE07263A438E00544FAB /* IterableChallengeTests.xctest */,
+				F9E4AE12263A438E00544FAB /* IterableChallengeUITests.xctest */,
+				F9E4AE2B263A51AC00544FAB /* IterableChallenge ServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9E4ADF8263A438B00544FAB /* IterableChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F9E4ADF9263A438B00544FAB /* IterableChallengeApp.swift */,
+				F9E4ADFB263A438B00544FAB /* ContentView.swift */,
+				F9E4ADFD263A438E00544FAB /* Assets.xcassets */,
+				F9E4AE02263A438E00544FAB /* Info.plist */,
+				F9E4ADFF263A438E00544FAB /* Preview Content */,
+				F9E4AE4D263A551D00544FAB /* Constants.swift */,
+				F9E4AE53263AF81200544FAB /* Model.swift */,
+			);
+			path = IterableChallenge;
+			sourceTree = "<group>";
+		};
+		F9E4ADFF263A438E00544FAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9E4AE00263A438E00544FAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9E4AE0A263A438E00544FAB /* IterableChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9E4AE0B263A438E00544FAB /* IterableChallengeTests.swift */,
+				F9E4AE0D263A438E00544FAB /* Info.plist */,
+			);
+			path = IterableChallengeTests;
+			sourceTree = "<group>";
+		};
+		F9E4AE15263A438E00544FAB /* IterableChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9E4AE16263A438E00544FAB /* IterableChallengeUITests.swift */,
+				F9E4AE18263A438E00544FAB /* Info.plist */,
+			);
+			path = IterableChallengeUITests;
+			sourceTree = "<group>";
+		};
+		F9E4AE2C263A51AC00544FAB /* IterableChallenge ServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F9E4AE2D263A51AC00544FAB /* NotificationService.swift */,
+				F9E4AE2F263A51AC00544FAB /* Info.plist */,
+			);
+			path = "IterableChallenge ServiceExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9E4ADF5263A438B00544FAB /* IterableChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E4AE1B263A438E00544FAB /* Build configuration list for PBXNativeTarget "IterableChallenge" */;
+			buildPhases = (
+				1A7BB01ABDB7F7FE858CD250 /* [CP] Check Pods Manifest.lock */,
+				F9E4ADF2263A438B00544FAB /* Sources */,
+				F9E4ADF3263A438B00544FAB /* Frameworks */,
+				F9E4ADF4263A438B00544FAB /* Resources */,
+				F9E4AE36263A51AC00544FAB /* Embed App Extensions */,
+				73616A0A38E8E78102D846F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9E4AE31263A51AC00544FAB /* PBXTargetDependency */,
+			);
+			name = IterableChallenge;
+			productName = IterableChallenge;
+			productReference = F9E4ADF6263A438B00544FAB /* IterableChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9E4AE06263A438E00544FAB /* IterableChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E4AE1E263A438E00544FAB /* Build configuration list for PBXNativeTarget "IterableChallengeTests" */;
+			buildPhases = (
+				F9E4AE03263A438E00544FAB /* Sources */,
+				F9E4AE04263A438E00544FAB /* Frameworks */,
+				F9E4AE05263A438E00544FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9E4AE09263A438E00544FAB /* PBXTargetDependency */,
+			);
+			name = IterableChallengeTests;
+			productName = IterableChallengeTests;
+			productReference = F9E4AE07263A438E00544FAB /* IterableChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9E4AE11263A438E00544FAB /* IterableChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E4AE21263A438E00544FAB /* Build configuration list for PBXNativeTarget "IterableChallengeUITests" */;
+			buildPhases = (
+				F9E4AE0E263A438E00544FAB /* Sources */,
+				F9E4AE0F263A438E00544FAB /* Frameworks */,
+				F9E4AE10263A438E00544FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9E4AE14263A438E00544FAB /* PBXTargetDependency */,
+			);
+			name = IterableChallengeUITests;
+			productName = IterableChallengeUITests;
+			productReference = F9E4AE12263A438E00544FAB /* IterableChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F9E4AE2A263A51AC00544FAB /* IterableChallenge ServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E4AE33263A51AC00544FAB /* Build configuration list for PBXNativeTarget "IterableChallenge ServiceExtension" */;
+			buildPhases = (
+				BECF0D1CE7BD081FB5FF0998 /* [CP] Check Pods Manifest.lock */,
+				F9E4AE27263A51AC00544FAB /* Sources */,
+				F9E4AE28263A51AC00544FAB /* Frameworks */,
+				F9E4AE29263A51AC00544FAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IterableChallenge ServiceExtension";
+			productName = "IterableChallenge ServiceExtension";
+			productReference = F9E4AE2B263A51AC00544FAB /* IterableChallenge ServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9E4ADEE263A438B00544FAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F9E4ADF5263A438B00544FAB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F9E4AE06263A438E00544FAB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F9E4ADF5263A438B00544FAB;
+					};
+					F9E4AE11263A438E00544FAB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F9E4ADF5263A438B00544FAB;
+					};
+					F9E4AE2A263A51AC00544FAB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F9E4ADF1263A438B00544FAB /* Build configuration list for PBXProject "IterableChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9E4ADED263A438B00544FAB;
+			productRefGroup = F9E4ADF7263A438B00544FAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9E4ADF5263A438B00544FAB /* IterableChallenge */,
+				F9E4AE06263A438E00544FAB /* IterableChallengeTests */,
+				F9E4AE11263A438E00544FAB /* IterableChallengeUITests */,
+				F9E4AE2A263A51AC00544FAB /* IterableChallenge ServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9E4ADF4263A438B00544FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E4AE01263A438E00544FAB /* Preview Assets.xcassets in Resources */,
+				F9E4ADFE263A438E00544FAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE05263A438E00544FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE10263A438E00544FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE29263A51AC00544FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A7BB01ABDB7F7FE858CD250 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IterableChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73616A0A38E8E78102D846F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IterableChallenge/Pods-IterableChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IterableChallenge/Pods-IterableChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IterableChallenge/Pods-IterableChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BECF0D1CE7BD081FB5FF0998 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IterableChallenge ServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9E4ADF2263A438B00544FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E4ADFC263A438B00544FAB /* ContentView.swift in Sources */,
+				F9E4ADFA263A438B00544FAB /* IterableChallengeApp.swift in Sources */,
+				F9E4AE4E263A551D00544FAB /* Constants.swift in Sources */,
+				F9E4AE54263AF81300544FAB /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE03263A438E00544FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E4AE0C263A438E00544FAB /* IterableChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE0E263A438E00544FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E4AE17263A438E00544FAB /* IterableChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E4AE27263A51AC00544FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E4AE2E263A51AC00544FAB /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9E4AE09263A438E00544FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9E4ADF5263A438B00544FAB /* IterableChallenge */;
+			targetProxy = F9E4AE08263A438E00544FAB /* PBXContainerItemProxy */;
+		};
+		F9E4AE14263A438E00544FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9E4ADF5263A438B00544FAB /* IterableChallenge */;
+			targetProxy = F9E4AE13263A438E00544FAB /* PBXContainerItemProxy */;
+		};
+		F9E4AE31263A51AC00544FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9E4AE2A263A51AC00544FAB /* IterableChallenge ServiceExtension */;
+			targetProxy = F9E4AE30263A51AC00544FAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F9E4AE19263A438E00544FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9E4AE1A263A438E00544FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9E4AE1C263A438E00544FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D323EDE311DE460ED7AECD /* Pods-IterableChallenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"IterableChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = C3233J6F6M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = IterableChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmcclay.IterableChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9E4AE1D263A438E00544FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254E2935997B6929C5BBB545 /* Pods-IterableChallenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"IterableChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = C3233J6F6M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = IterableChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmcclay.IterableChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9E4AE1F263A438E00544FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3233J6F6M;
+				INFOPLIST_FILE = IterableChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmcclay.IterableChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IterableChallenge.app/IterableChallenge";
+			};
+			name = Debug;
+		};
+		F9E4AE20263A438E00544FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3233J6F6M;
+				INFOPLIST_FILE = IterableChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmcclay.IterableChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IterableChallenge.app/IterableChallenge";
+			};
+			name = Release;
+		};
+		F9E4AE22263A438E00544FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3233J6F6M;
+				INFOPLIST_FILE = IterableChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmcclay.IterableChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IterableChallenge;
+			};
+			name = Debug;
+		};
+		F9E4AE23263A438E00544FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3233J6F6M;
+				INFOPLIST_FILE = IterableChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmcclay.IterableChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IterableChallenge;
+			};
+			name = Release;
+		};
+		F9E4AE34263A51AC00544FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B611F8B1AAC35C4A21075EA1 /* Pods-IterableChallenge ServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3233J6F6M;
+				INFOPLIST_FILE = "IterableChallenge ServiceExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesmcclay.IterableChallenge.IterableChallenge-ServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9E4AE35263A51AC00544FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82400018DB72E5912F52149F /* Pods-IterableChallenge ServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C3233J6F6M;
+				INFOPLIST_FILE = "IterableChallenge ServiceExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamesmcclay.IterableChallenge.IterableChallenge-ServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9E4ADF1263A438B00544FAB /* Build configuration list for PBXProject "IterableChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E4AE19263A438E00544FAB /* Debug */,
+				F9E4AE1A263A438E00544FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9E4AE1B263A438E00544FAB /* Build configuration list for PBXNativeTarget "IterableChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E4AE1C263A438E00544FAB /* Debug */,
+				F9E4AE1D263A438E00544FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9E4AE1E263A438E00544FAB /* Build configuration list for PBXNativeTarget "IterableChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E4AE1F263A438E00544FAB /* Debug */,
+				F9E4AE20263A438E00544FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9E4AE21263A438E00544FAB /* Build configuration list for PBXNativeTarget "IterableChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E4AE22263A438E00544FAB /* Debug */,
+				F9E4AE23263A438E00544FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9E4AE33263A51AC00544FAB /* Build configuration list for PBXNativeTarget "IterableChallenge ServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E4AE34263A51AC00544FAB /* Debug */,
+				F9E4AE35263A51AC00544FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9E4ADEE263A438B00544FAB /* Project object */;
+}
